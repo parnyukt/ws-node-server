@@ -1,4 +1,4 @@
-# Node.js Websocket Server
+# Node.js WebSocket Server
 
 # Running Locally
 
