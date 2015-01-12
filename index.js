@@ -2,9 +2,13 @@ var WebSocketServer = require("ws").Server;
 var http = require("http");
 var express = require("express");
 var app = express();
+var cool = require('cool-ascii-faces');
 var port = process.env.PORT || 5000;
 
 app.use(express.static(__dirname + "/"));
+app.get('/', function(request, response) {
+  response.send(cool());
+});
 
 var server = http.createServer(app);
 server.listen(port);
